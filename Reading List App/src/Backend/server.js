@@ -28,7 +28,7 @@ app.listen(PORT, () => {
 
 app.post('/api/demographics', (req, res) => {
     const { firstName, lastName, password, bookTitle, ISBN, rating, bookCategory, bookReview } = req.body;
-    const query = ` INSERT INTO demographics (firstName, lastName, password, bookTitle, ISBN, rating, bookCategory, bookReview) VALUES (?, ?, ?, ?, ?, ?) `;
+    const query = ` INSERT INTO demographics (firstName, lastName, password, bookTitle, ISBN, rating, bookCategory, bookReview) VALUES (?, ?, ?, ?, ?, ?, ?, ?) `;
     db.run(query, [firstName, lastName, password, bookTitle, ISBN, rating, bookCategory, bookReview], function (err) { if (err) return res.status(500).json({ error: err.message }); res.json({ id: this.lastID });
     });
 });
