@@ -37,7 +37,8 @@ export default function Login() {
 
         if (data.success) {
           alert('Login successful!');
-          navigate('/'); // redirect after login
+          localStorage.setItem("userId", data.user.id);
+          navigate('/BookSearch'); // redirect after login
         } else {
           setErrors({ submit: data.message });
         }

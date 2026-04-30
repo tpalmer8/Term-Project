@@ -14,6 +14,10 @@ import Login from "./login";
 import Home from "./home";
 import ForgotPassword from "./ForgotPassword";
 import Register from "./Register";
+import TBR from './TBR';
+import BookSearch from './BookSearch';
+import ReadBooks from './ReadBooks'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,7 +57,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
-
+          <Route path="/tbr" element={<TBR />} />
+          <Route path="/BookSearch" element={<BookSearch />} />
+          <Route path="/read" element={<ReadBooks />} />
         </Routes>
       </Router>
     </>

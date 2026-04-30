@@ -11,8 +11,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+  --heading: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -33,8 +33,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
+    --text-h: #020000b3;
+    --bg: #850606c0;
     --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
