@@ -27,7 +27,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
-          <Route path="/" element={
+          {/* <Route path="/" element={
             <section id="center">
               <div className="hero">
                 <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -53,7 +53,8 @@ function App() {
                 </button>
               </Link>
             </section>
-          } />
+          } /> */}
+          <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
