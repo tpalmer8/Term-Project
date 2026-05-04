@@ -92,13 +92,13 @@ export default function ForgotPassword() {
 
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Username</label>
+            <label htmlFor="username">First Name</label>
             <input
               type="text"
               id="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              placeholder="Enter your username"
+              placeholder="Enter your first name"
               className={errors.username ? 'error' : ''}
             />
             {errors.username && <span className="error-text">{errors.username}</span>}

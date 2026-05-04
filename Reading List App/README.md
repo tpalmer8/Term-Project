@@ -20,3 +20,7 @@ Features
 their “to read” list. 
 • Allows users to select books on their “to read” list as “read”. 
 • Allows users to rate the books they have read out of 5 stars. 
+
+How to start the application:
+• Navigate to the src\Backend folder in the terminal and run “npm run dev”
+• Navigate to the src\Frontend folder in the terminal and run “npm run dev”. Click the link that is printed in the terminal as a result.

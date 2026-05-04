@@ -10,7 +10,7 @@ export default function Login() {
 
   const validate = () => {
     const newErrors = {};
-    if (!username) newErrors.username = 'Username is required';
+    if (!username) newErrors.username = 'First Name is required';
     if (!password) newErrors.password = 'Password is required';
     else if (password.length < 6) newErrors.password = 'Password must be at least 6 characters';
     return newErrors;
@@ -54,7 +54,7 @@ export default function Login() {
     <form onSubmit={handleSubmit} style={{ maxWidth: 300, margin: '2rem auto' }}>
       <div>
         <label>
-          Username:
+          First Name:
           <input
             type="text"
             value={username}
